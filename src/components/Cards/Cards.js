@@ -1,12 +1,16 @@
 import React from "react";
+import "../Cards/Cards.css";
 
-const Cards = () => {
-    return(
-        <>
-        <h1>12663</h1>
-        <div>133</div>
-    </>
-    )
-}
+const Cards = (props) => {
+  const { title, imageUrl } = props;
+  return (
+    <div className="cards">
+      <div className="card__image">
+        <img src={imageUrl} alt="" />
+      </div>
+      <p className="card__title">{title}</p>
+    </div>
+  );
+};
 
 export default Cards;

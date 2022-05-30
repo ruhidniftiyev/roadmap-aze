@@ -1,10 +1,9 @@
-import './App.css';
-import Cards from './components/Cards/Cards';
+import "./App.css";
+import MainPage from "./pages/MainPage/MainPage";
+import "./reset.css";
 
-function App() {
-  return (
-    <Cards/>
-  );
-}
+const App = () => {
+  return <MainPage />;
+};
 
 export default App;
