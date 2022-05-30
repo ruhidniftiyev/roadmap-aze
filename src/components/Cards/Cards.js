@@ -3,6 +3,7 @@ import "../Cards/Cards.css";
 
 const Cards = (props) => {
   const { title, imageUrl } = props;
+
   return (
     <div className="cards">
       <div className="card__image">

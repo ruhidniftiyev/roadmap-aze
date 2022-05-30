@@ -1,11 +1,15 @@
 import React from "react";
 import CardsItem from "../../components/CardItem/CardsItem";
-import './MainPage.css'
+import Header from "../../components/Header/Header";
+import "./MainPage.css";
 
 const MainPage = () => {
   return (
     <div className="main">
-      <CardsItem />
+      <Header />
+      <div className="cardsItem">
+        <CardsItem />
+      </div>
     </div>
   );
 };
