@@ -7,6 +7,6 @@ li {
 .card {
     display: flex;
     flex-wrap: wrap;
-    width: 1080px;
+        width: 1300px;
 }
 
