@@ -1,12 +1,12 @@
 li {
     list-style: none;
     display: inline;
-    margin: 30px;
+    margin: 50px;
 }
 
 .card {
     display: flex;
     flex-wrap: wrap;
-        width: 1300px;
+    width: 1300px;
 }
 

@@ -2,11 +2,11 @@
   color: white;
   margin-right: 30px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .header__nav-item:hover {
-              cursor: pointer;
+  cursor: pointer;
   color: #6b38ff;
 }
 
