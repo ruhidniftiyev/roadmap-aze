@@ -42,3 +42,10 @@ h1, p {
 .progressbar li.active::before{
   border-color: green;
 }
+
+.nodeNameBase {
+  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 0.1;
+  
+}

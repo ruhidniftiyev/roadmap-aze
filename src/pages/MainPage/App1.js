@@ -4,63 +4,47 @@ import Tree from "react-d3-tree";
 import "./style1.css";
 
 const svgSquare = {
-  shape: "circle",
+  shape: 'rect',
   shapeProps: {
-    width: 20,
-    height: 20,
-    cx: 1,
-    cy: 1,
-    r: 13,
-    fill: "yellow",
-    stroke: "black",
-    strokeWidth: 4,
+    width: 100,
+    height: 50,
+    x: -50,
+    y: -30,
+    fill: "#ff0",
+    stroke: "white",
+    strokeWidth: 1,
   },
 };
 const svgPath = {
   shape: "path",
   orientation: "vertical",
+  translate: { x: 500, y: 50 },
   shapeProps: {
     d: "M0,0C70,0 70,-280 140,-280",
-    fill: "none",
-    stroke: "yellow",
+    fill: "white",
+    stroke: "white",
+    
   },
 };
 
 const myTreeData = [
   {
-    name: "Eve",
+    name: "Frontend",
 
     _collapsed: true,
 
     children: [
       {
-        name: "Cain",
+        name: "HTML",
         _collapsed: true,
         nodeSvgShape: {
           shape: "circle",
           shapeProps: {
-            width: 20,
-            height: 20,
+            width: 40,
+            height: 40,
             cx: 1,
             cy: 1,
-            r: 10,
-            fill: "yellow",
-            stroke: "grey",
-            strokeWidth: 3,
-          },
-        },
-      },
-      {
-        name: "seth",
-        _collapsed: true,
-        nodeSvgShape: {
-          shape: "circle",
-          shapeProps: {
-            width: 20,
-            height: 20,
-            cx: 1,
-            cy: 1,
-            r: 10,
+            r: 20,
             fill: "red",
             stroke: "grey",
             strokeWidth: 3,
@@ -69,15 +53,82 @@ const myTreeData = [
 
         children: [
           {
+            name: "Learn the basics",
+            nodeSvgShape: {
+              shape: "circle",
+              shapeProps: {
+                width: 40,
+                height: 40,
+                cx: 1,
+                cy: 1,
+                r: 20,
+                fill: "purple",
+                stroke: "grey",
+                strokeWidth: 3,
+              },
+            },
+          },
+          {
+            name: "Forms and Validations",
+            nodeSvgShape: {
+              shape: "circle",
+              shapeProps: {
+                width: 40,
+                height: 40,
+                cx: 1,
+                cy: 1,
+                r: 20,
+                fill: "purple",
+                stroke: "grey",
+                strokeWidth: 3,
+              },
+            },
+          },
+          {
+            name: "Convention and Best practices",
+            nodeSvgShape: {
+              shape: "circle",
+              shapeProps: {
+                width: 40,
+                height: 40,
+                cx: 1,
+                cy: 1,
+                r: 20,
+                fill: "purple",
+                stroke: "grey",
+                strokeWidth: 3,
+              },
+            },
+          },
+        ],
+      },
+      {
+        name: "JavaScript",
+        _collapsed: true,
+        nodeSvgShape: {
+          shape: "circle",
+          shapeProps: {
+            width: 40,
+            height: 40,
+            cx: 1,
+            cy: 1,
+            r: 20,
+            fill: "blue",
+            stroke: "grey",
+            strokeWidth: 3,
+          },
+        },
+        children: [
+          {
             name: "Enos",
             nodeSvgShape: {
               shape: "circle",
               shapeProps: {
-                width: 20,
-                height: 20,
+                width: 40,
+                height: 40,
                 cx: 1,
                 cy: 1,
-                r: 10,
+                r: 20,
                 fill: "purple",
                 stroke: "grey",
                 strokeWidth: 3,
@@ -89,11 +140,27 @@ const myTreeData = [
             nodeSvgShape: {
               shape: "circle",
               shapeProps: {
-                width: 20,
-                height: 20,
+                width: 40,
+                height: 40,
                 cx: 1,
                 cy: 1,
-                r: 10,
+                r: 20,
+                fill: "purple",
+                stroke: "grey",
+                strokeWidth: 3,
+              },
+            },
+          },
+          {
+            name: "Noam",
+            nodeSvgShape: {
+              shape: "circle",
+              shapeProps: {
+                width: 40,
+                height: 40,
+                cx: 1,
+                cy: 1,
+                r: 20,
                 fill: "purple",
                 stroke: "grey",
                 strokeWidth: 3,
@@ -103,33 +170,16 @@ const myTreeData = [
         ],
       },
       {
-        name: "Abel",
+        name: "CSS",
         _collapsed: true,
         nodeSvgShape: {
           shape: "circle",
           shapeProps: {
-            width: 20,
-            height: 20,
+            width: 40,
+            height: 40,
             cx: 1,
             cy: 1,
-            r: 10,
-            fill: "blue",
-            stroke: "grey",
-            strokeWidth: 3,
-          },
-        },
-      },
-      {
-        name: "Awan",
-        _collapsed: true,
-        nodeSvgShape: {
-          shape: "circle",
-          shapeProps: {
-            width: 20,
-            height: 20,
-            cx: 1,
-            cy: 1,
-            r: 10,
+            r: 20,
             fill: "green",
             stroke: "grey",
             strokeWidth: 3,
@@ -141,11 +191,45 @@ const myTreeData = [
             nodeSvgShape: {
               shape: "circle",
               shapeProps: {
-                width: 20,
-                height: 20,
+                width: 40,
+                height: 40,
                 cx: 1,
                 cy: 1,
-                r: 10,
+                r: 20,
+                fill: "orange",
+                stroke: "grey",
+                strokeWidth: 3,
+                textAnchor: "end",
+              },
+            },
+          },
+          {
+            name: "Enoch",
+            nodeSvgShape: {
+              shape: "circle",
+              shapeProps: {
+                width: 40,
+                height: 40,
+                cx: 1,
+                cy: 1,
+                r: 20,
+                fill: "orange",
+                stroke: "grey",
+                strokeWidth: 3,
+                textAnchor: "end",
+              },
+            },
+          },
+          {
+            name: "Enoch",
+            nodeSvgShape: {
+              shape: "circle",
+              shapeProps: {
+                width: 40,
+                height: 40,
+                cx: 1,
+                cy: 1,
+                r: 20,
                 fill: "orange",
                 stroke: "grey",
                 strokeWidth: 3,
@@ -155,23 +239,6 @@ const myTreeData = [
           },
         ],
       },
-      {
-        name: "Azura",
-        _collapsed: true,
-        nodeSvgShape: {
-          shape: "circle",
-          shapeProps: {
-            width: 20,
-            height: 20,
-            cx: 1,
-            cy: 1,
-            r: 10,
-            fill: "green",
-            stroke: "grey",
-            strokeWidth: 3,
-          },
-        },
-      },
     ],
   },
 ];
@@ -180,7 +247,7 @@ const App1 = () => {
   return (
     <div
       id="treeWrapper"
-      style={{ width: "720px", height: "1280px", textAlign: "center" }}
+      style={{ width: "1280px", height: "720px", textAlign: "center" }}
     >
       {/* <ul className="progressbar">
         <li className="active">Step1</li>
@@ -190,11 +257,11 @@ const App1 = () => {
       <h1>FRONTEND TUTORIAL</h1>
 
       <Tree data={myTreeData} nodeSvgShape={svgSquare} {...svgPath} />
+      
     </div>
   );
 };
 
-// render(<App1 />, document.getElementById("root"));
 
 export default App1;
 
