@@ -1,6 +1,6 @@
 .card__image {
-    width: 250px;
-    height: 190px;
+    width: 166px;
+    height: 126px;
     border-radius: 50px;
     background: linear-gradient(to bottom right,rgb(57, 57, 194), pink);
     display: flex;
@@ -9,13 +9,13 @@
 }
 
 img {
-    width: 150px;
+    width: 100px;
 }
 
 .cards {
     background: linear-gradient(to bottom right, #1e074f, #160B25);
-    width: 300px;
-    height: 285px;
+    width: 205px;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
