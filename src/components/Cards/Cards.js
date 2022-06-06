@@ -10,6 +10,7 @@ const Cards = (props) => {
         <img src={imageUrl} alt="" />
       </div>
       <p className="card__title">{title}</p>
+      
     </div>
   );
 };

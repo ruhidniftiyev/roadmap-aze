@@ -8,11 +8,13 @@ const MainPage = () => {
   return (
     <div className="main">
       <Header />
-      <div className="cardsItem">
-        <CardsItem />
-      </div>
-      <div className="Trees">
-        <App1 />
+      <div  className="commonBlock">
+        <div className="cardsItem">
+          <CardsItem />
+        </div>
+        <div className="Trees">
+          <App1 />
+        </div>
       </div>
     </div>
   );

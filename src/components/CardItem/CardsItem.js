@@ -19,11 +19,12 @@ const CardsItem = () => {
   return (
     <ul className="card">
       {titles.map((title) => (
-        <li className="cards__item">
+        <li className="cards__item" onClick={() => { console.log("clicked!")} }>
           <Cards {...title} />
         </li>
       ))}
     </ul>
+    
   );
 };
 

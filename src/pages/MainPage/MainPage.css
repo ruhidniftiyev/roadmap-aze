@@ -5,3 +5,10 @@
 .cardsItem{
     margin-left: 40px;
 }
+
+.Trees{
+    /* display: none; */
+}
+.commonBlock{
+    display: flex;
+}
