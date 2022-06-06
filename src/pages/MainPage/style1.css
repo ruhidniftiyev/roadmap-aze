@@ -49,7 +49,10 @@ h1, p {
   stroke-width: 0.1;
   transform: translateX(-40px);
   word-wrap: break-word;
-  
-  
+}
+
+.linkBase {
+  fill: none;
+  stroke: #2a126d;
 }
 

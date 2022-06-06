@@ -20,7 +20,7 @@ const svgPath = {
   orientation: "vertical",
   separation: { siblings: 1.5, nonSiblings: 2.5 },
   zoomable: true,
-  translate: { x: 500, y: 50 },
+  translate: { x: 400, y: 50 },
   shapeProps: {
     d: "M0,0C70,0 70,-280 140,-280",
     fill: "white",
@@ -68,7 +68,7 @@ const myTreeData = [
             },
           },
           {
-            name: "Forms and Validations",
+            name: "Forms&Validations",
             nodeSvgShape: {
               shape: "rect",
               shapeProps: {
@@ -83,7 +83,7 @@ const myTreeData = [
             },
           },
           {
-            name: "Convention and Best practices",
+            name: "Convention",
             nodeSvgShape: {
               shape: "rect",
               shapeProps: {
@@ -116,7 +116,7 @@ const myTreeData = [
         },
         children: [
           {
-            name: "Syntax and Basic constructs",
+            name: "Syntax",
             nodeSvgShape: {
               shape: "rect",
               shapeProps: {
@@ -131,7 +131,7 @@ const myTreeData = [
             },
           },
           {
-            name: "DOM Manipulation",
+            name: "DOM",
             nodeSvgShape: {
               shape: "rect",
               shapeProps: {
@@ -236,7 +236,7 @@ const App1 = () => {
   return (
     <div
       id="treeWrapper"
-      style={{ width: "1300px", height: "720px", textAlign: "center" }}
+      style={{ width: "65em", height: "720px", textAlign: "center" }}
     >
       {/* <ul className="progressbar">
         <li className="active">Step1</li>
