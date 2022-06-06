@@ -1,7 +1,9 @@
-.main {
+#main {
     background-color: #160B25;
 }
 
 .cardsItem{
     margin-left: 40px;
+    display: inline-block;
+    width: 800px;
 }
